@@ -17,8 +17,13 @@ text2 = text1.split()
 text3 = list(map(str.lower, text2))
 # print(text3)
 
+my_dict={}
 for i in text3:
-    l=morph.parse(i)[0]
+    my_dict[i] = text3.count(i)
+# print(my_dict)
+
+# for i in text3:
+#     l=morph.parse(i)[0]
     # print(l.normal_form)
 
 text4 = sorted(set(text3), reverse=True)
