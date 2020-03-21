@@ -26,6 +26,7 @@ for i in text3:
     l=morph.parse(i)[0]
     # print(l.normal_form)
 
-text4 = sorted(set(text3), reverse=True)
-# print(text4[:5])
-# print(len(text4))
+text4 = set(text3)
+text5 = sorted((my_dict.items()), key=lambda x:x[1], reverse=True)
+print('Количество разных слов:', len(text4))
+print(text5[:5])
